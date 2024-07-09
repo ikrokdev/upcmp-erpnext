@@ -15,7 +15,10 @@
   "description",
   "hero_image",
   "slideshow",
-  "hero_section"
+  "hero_section",
+  "products_section",
+  "products_url",
+  "products"
  ],
  "fields": [
   {
@@ -83,11 +86,30 @@
    "fieldtype": "Link",
    "label": "Homepage Section",
    "options": "Homepage Section"
+  },
+  {
+   "fieldname": "products_section",
+   "fieldtype": "Section Break",
+   "label": "Products"
+  },
+  {
+   "default": "/all-products",
+   "fieldname": "products_url",
+   "fieldtype": "Data",
+   "label": "URL for \"All Products\""
+  },
+  {
+   "description": "Products to be shown on website homepage",
+   "fieldname": "products",
+   "fieldtype": "Table",
+   "label": "Products",
+   "options": "Homepage Featured Product",
+   "width": "40px"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-12-19 21:10:29.127277",
+ "modified": "2021-02-18 13:29:29.531639",
  "modified_by": "Administrator",
  "module": "Portal",
  "name": "Homepage",
@@ -116,7 +138,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
  "title_field": "company",
  "track_changes": 1
 }
